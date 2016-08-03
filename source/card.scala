@@ -11,14 +11,16 @@ class Card(val suit: String, val value: String) {
            Value: ${value} 
       """);
   }
+
+  def name = f"${value} of ${suit}s"
 }
  
 
 object Card {
   val valid_suits = Array("heart", "diamond", "club", "spade")
   val valid_values = Array(
-                     "one", "two", "three", "four", 
-                     "five", "six","seven", "eight", "nine",
+                     "two", "three", "four", "five", 
+                     "six","seven", "eight", "nine",
                      "ten", "jack", "queen", "king", "ace"
                    )
 }
