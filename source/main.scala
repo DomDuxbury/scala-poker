@@ -8,6 +8,8 @@ object PokerGame {
       println("======================================")
       aceofhearts.shuffle
       aceofhearts.cards map (card => println(card.name))
+      println(f"top card: ${aceofhearts.takeTopCard.name} ==========")
+      aceofhearts.cards map (card => println(card.name))
     } catch {
       case e: Exception => println(e)
     }
