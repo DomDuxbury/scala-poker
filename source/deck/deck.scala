@@ -1,4 +1,4 @@
-package deck
+package card
 
 class Card(val suit: String, val value: String) {
   if (
